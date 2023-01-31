@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct WeatherModel {
+struct WeatherModel: Equatable {
     let cityName: String
     let temperature: Double
     

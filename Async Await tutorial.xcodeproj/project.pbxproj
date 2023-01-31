@@ -16,6 +16,10 @@
 		15B0396E2989084800B2626D /* AsyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0396D2989084800B2626D /* AsyncViewModel.swift */; };
 		15B03976298910A500B2626D /* Async_Await_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B03975298910A500B2626D /* Async_Await_tutorialTests.swift */; };
 		15B0397E2989113500B2626D /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0397D2989113500B2626D /* Helpers.swift */; };
+		15B0398029892EE700B2626D /* JSONFetchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0397F29892EE700B2626D /* JSONFetchTest.swift */; };
+		15B039822989364400B2626D /* TestVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B039812989364400B2626D /* TestVM.swift */; };
+		15B039852989396800B2626D /* weatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B039842989396800B2626D /* weatherService.swift */; };
+		15B0398929893B1200B2626D /* MockWeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B0398829893B1200B2626D /* MockWeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		15B03973298910A500B2626D /* Async Await tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Async Await tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B03975298910A500B2626D /* Async_Await_tutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async_Await_tutorialTests.swift; sourceTree = "<group>"; };
 		15B0397D2989113500B2626D /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		15B0397F29892EE700B2626D /* JSONFetchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetchTest.swift; sourceTree = "<group>"; };
+		15B039812989364400B2626D /* TestVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVM.swift; sourceTree = "<group>"; };
+		15B039842989396800B2626D /* weatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherService.swift; sourceTree = "<group>"; };
+		15B0398829893B1200B2626D /* MockWeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		15B039572989075B00B2626D /* Async Await tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				15B039832989394E00B2626D /* Network */,
 				15B0397C2989112500B2626D /* Utils */,
 				15B039582989075B00B2626D /* Async_Await_tutorialApp.swift */,
 				15B039682989077400B2626D /* Model */,
@@ -129,6 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				15B03975298910A500B2626D /* Async_Await_tutorialTests.swift */,
+				15B0397F29892EE700B2626D /* JSONFetchTest.swift */,
+				15B039812989364400B2626D /* TestVM.swift */,
+				15B0398829893B1200B2626D /* MockWeatherService.swift */,
 			);
 			path = "Async Await tutorialTests";
 			sourceTree = "<group>";
@@ -139,6 +151,14 @@
 				15B0397D2989113500B2626D /* Helpers.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		15B039832989394E00B2626D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				15B039842989396800B2626D /* weatherService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B039852989396800B2626D /* weatherService.swift in Sources */,
 				15B0395B2989075B00B2626D /* MainView.swift in Sources */,
 				15B0397E2989113500B2626D /* Helpers.swift in Sources */,
 				15B0396A2989079300B2626D /* WeatherData.swift in Sources */,
@@ -254,6 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B0398029892EE700B2626D /* JSONFetchTest.swift in Sources */,
+				15B039822989364400B2626D /* TestVM.swift in Sources */,
+				15B0398929893B1200B2626D /* MockWeatherService.swift in Sources */,
 				15B03976298910A500B2626D /* Async_Await_tutorialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
